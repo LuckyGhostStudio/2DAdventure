@@ -1,2 +1,2 @@
-# LegendWarriors
+# 2D Adventure
 2D Platform Game
