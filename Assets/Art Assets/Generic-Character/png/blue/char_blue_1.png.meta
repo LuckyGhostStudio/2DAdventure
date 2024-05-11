@@ -572,7 +572,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_blue_1_22
+      name: char_blue_jump1-1
       rect:
         serializedVersion: 2
         x: 0
@@ -593,10 +593,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_blue_1_23
+      name: char_blue_jump1-2
       rect:
         serializedVersion: 2
-        x: 56
+        x: 57
         y: 392
         width: 56
         height: 56
@@ -614,7 +614,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_blue_1_24
+      name: char_blue_jump2-1
       rect:
         serializedVersion: 2
         x: 112
@@ -635,7 +635,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_blue_1_25
+      name: char_blue_jump2-2
       rect:
         serializedVersion: 2
         x: 168
@@ -656,7 +656,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_blue_1_26
+      name: char_blue_jump2-3
       rect:
         serializedVersion: 2
         x: 224
@@ -677,7 +677,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_blue_1_27
+      name: char_blue_jump2-4
       rect:
         serializedVersion: 2
         x: 280
@@ -698,7 +698,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_blue_1_28
+      name: char_blue_jump3-1
       rect:
         serializedVersion: 2
         x: 336
@@ -719,7 +719,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_blue_1_29
+      name: char_blue_jump3-2
       rect:
         serializedVersion: 2
         x: 392
@@ -740,7 +740,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_blue_1_30
+      name: char_blue_jump3-3
       rect:
         serializedVersion: 2
         x: 0
@@ -761,7 +761,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_blue_1_31
+      name: char_blue_jump4-1
       rect:
         serializedVersion: 2
         x: 56
@@ -782,10 +782,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_blue_1_32
+      name: char_blue_jump4-2
       rect:
         serializedVersion: 2
-        x: 112
+        x: 113
         y: 336
         width: 56
         height: 56
@@ -803,7 +803,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_blue_1_33
+      name: char_blue_jump4-3
       rect:
         serializedVersion: 2
         x: 168
@@ -824,7 +824,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_blue_1_34
+      name: char_blue_jump4-4
       rect:
         serializedVersion: 2
         x: 224
@@ -845,7 +845,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_blue_1_35
+      name: char_blue_jump5-1
       rect:
         serializedVersion: 2
         x: 280
@@ -866,7 +866,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_blue_1_36
+      name: char_blue_jump5-2
       rect:
         serializedVersion: 2
         x: 336
@@ -887,7 +887,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_blue_1_37
+      name: char_blue_jump5-3
       rect:
         serializedVersion: 2
         x: 392
@@ -1563,59 +1563,59 @@ TextureImporter:
       char_blue_1_2: 9192951
       char_blue_1_20: -1293766306
       char_blue_1_21: -1417828783
-      char_blue_1_22: 288099050
-      char_blue_1_23: -1218409663
-      char_blue_1_24: 390004083
-      char_blue_1_25: 1584289244
-      char_blue_1_26: 1263994053
-      char_blue_1_27: 690767666
-      char_blue_1_28: 840344144
-      char_blue_1_29: -1569097570
-      char_blue_1_3: 1673737025
-      char_blue_1_30: -651393146
-      char_blue_1_31: 1853224980
-      char_blue_1_32: -1271000735
-      char_blue_1_33: -631382141
-      char_blue_1_34: -877189900
-      char_blue_1_35: 1606354495
-      char_blue_1_36: 1025770346
-      char_blue_1_37: -625343626
-      char_blue_1_38: -1374428140
-      char_blue_1_39: 1067037714
-      char_blue_1_4: 709032059
-      char_blue_1_40: 1854679440
-      char_blue_1_41: -2103289399
-      char_blue_1_42: -2044098446
-      char_blue_1_43: 1820599020
-      char_blue_1_44: 1732931336
-      char_blue_1_45: 282307257
-      char_blue_1_46: 1806712898
-      char_blue_1_47: -570325205
-      char_blue_1_48: -123797367
-      char_blue_1_49: 1643978542
-      char_blue_1_5: -868878885
-      char_blue_1_50: 1584907076
-      char_blue_1_51: -1751068876
-      char_blue_1_52: 347646451
-      char_blue_1_53: -41236628
-      char_blue_1_54: -84386893
-      char_blue_1_55: 971267694
-      char_blue_1_56: 1833584246
-      char_blue_1_57: -1455188222
-      char_blue_1_58: 445325206
-      char_blue_1_59: 327743058
-      char_blue_1_6: -1179200785
-      char_blue_1_60: -609134370
-      char_blue_1_61: 1861878024
-      char_blue_1_62: 893115998
-      char_blue_1_63: 2047882989
-      char_blue_1_64: 30736573
-      char_blue_1_65: 851031506
-      char_blue_1_66: -23039375
-      char_blue_1_67: -654575481
-      char_blue_1_7: -1166940754
-      char_blue_1_8: 1418123280
-      char_blue_1_9: 1134758679
+      char_blue_1_3: -651393146
+      char_blue_1_38: 1067037714
+      char_blue_1_39: 709032059
+      char_blue_1_4: 1854679440
+      char_blue_1_40: -2103289399
+      char_blue_1_41: -2044098446
+      char_blue_1_42: 1820599020
+      char_blue_1_43: 1732931336
+      char_blue_1_44: 282307257
+      char_blue_1_45: 1806712898
+      char_blue_1_46: -570325205
+      char_blue_1_47: -123797367
+      char_blue_1_48: 1643978542
+      char_blue_1_49: -868878885
+      char_blue_1_5: 1584907076
+      char_blue_1_50: -1751068876
+      char_blue_1_51: 347646451
+      char_blue_1_52: -41236628
+      char_blue_1_53: -84386893
+      char_blue_1_54: 971267694
+      char_blue_1_55: 1833584246
+      char_blue_1_56: -1455188222
+      char_blue_1_57: 445325206
+      char_blue_1_58: 327743058
+      char_blue_1_59: -1179200785
+      char_blue_1_6: -609134370
+      char_blue_1_60: 1861878024
+      char_blue_1_61: 893115998
+      char_blue_1_62: 2047882989
+      char_blue_1_63: 30736573
+      char_blue_1_64: 851031506
+      char_blue_1_65: -23039375
+      char_blue_1_66: -654575481
+      char_blue_1_67: -1166940754
+      char_blue_1_7: 1418123280
+      char_blue_1_8: 1134758679
+      char_blue_1_9: 288099050
+      char_blue_jump1-1: -1218409663
+      char_blue_jump1-2: 390004083
+      char_blue_jump2-1: 1584289244
+      char_blue_jump2-2: 1263994053
+      char_blue_jump2-3: 690767666
+      char_blue_jump2-4: 840344144
+      char_blue_jump3-1: -1569097570
+      char_blue_jump3-2: -1569097570
+      char_blue_jump3-3: -651393146
+      char_blue_jump4-1: 1853224980
+      char_blue_jump4-2: -1271000735
+      char_blue_jump4-3: -631382141
+      char_blue_jump4-4: -877189900
+      char_blue_jump5-1: 1606354495
+      char_blue_jump5-2: 1025770346
+      char_blue_jump5-3: -625343626
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
