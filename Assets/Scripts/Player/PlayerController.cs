@@ -151,7 +151,8 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log(attacker.name);
         isHurt = true;
-        rb.velocity = Vector2.zero;
+
+        rb.velocity = new Vector2(0, rb.velocity.y);
 
         rb.AddForce((transform.position - attacker.position).normalized * hurtForce, ForceMode2D.Impulse);   // ÃÌº”∑¥≥Â¡¶
     }

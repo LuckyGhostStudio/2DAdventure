@@ -207,7 +207,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 21649062}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.69, y: -1.72, z: 0}
+  m_LocalPosition: {x: -6.69, y: -1.984988, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -311,12 +311,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c2785166c3a7194dab856485a05b51b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manual: 0
   checkRadius: 0.08
   bottomOffset: {x: -0.05, y: 0}
+  leftOffset: {x: 0, y: 0}
+  rightOffset: {x: 0, y: 0}
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
   isGround: 0
+  touchLeftWall: 0
+  touchRightWall: 0
 --- !u!95 &21649070
 Animator:
   serializedVersion: 5
@@ -3084,7 +3089,7 @@ CompositeCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_GeometryType: 0
+  m_GeometryType: 1
   m_GenerationType: 0
   m_EdgeRadius: 0
   m_ColliderPaths:
@@ -4157,8 +4162,11 @@ GameObject:
   - component: {fileID: 2059700668}
   - component: {fileID: 2059700667}
   - component: {fileID: 2059700669}
+  - component: {fileID: 2059700673}
   - component: {fileID: 2059700670}
   - component: {fileID: 2059700671}
+  - component: {fileID: 2059700674}
+  - component: {fileID: 2059700672}
   m_Layer: 8
   m_Name: Boar
   m_TagString: Untagged
@@ -4226,7 +4234,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2059700664}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.24, y: -1.76, z: 0}
+  m_LocalPosition: {x: 0.32, y: -1.92, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4242,7 +4250,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 2059700664}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 72690bdd447579049a063dac3b540e70, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -4361,7 +4369,19 @@ MonoBehaviour:
       m_Calls: []
   OnDie:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2059700672}
+        m_TargetAssemblyTypeName: Enemy, Assembly-CSharp
+        m_MethodName: Die
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2059700671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4377,3 +4397,80 @@ MonoBehaviour:
   damage: 5
   range: 0
   rate: 0
+--- !u!114 &2059700672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2059700664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5894c6bc8a6de25479226b72a00429a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 0}
+  physicsCheck: {fileID: 0}
+  normalSpeed: 100
+  chaseSpeed: 260
+  currentSpeed: 0
+  faceDir: {x: 0, y: 0, z: 0}
+  hurtForce: 5
+  attacker: {fileID: 0}
+  checkOffset: {x: 0, y: 0.65}
+  checkSize: {x: 1, y: 1}
+  checkDistance: 4.5
+  attackLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  waitTime: 1.5
+  waitTimeCounter: 0
+  wait: 0
+  lostTime: 2
+  lostTimeCounter: 0
+  isHurt: 0
+  isDead: 0
+--- !u!95 &2059700673
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2059700664}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 05a5896785fdaef47b4b03f52496793b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2059700674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2059700664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c2785166c3a7194dab856485a05b51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manual: 0
+  checkRadius: 0.1
+  bottomOffset: {x: -1.67, y: 0}
+  leftOffset: {x: -1.11, y: 0.66}
+  rightOffset: {x: 0.87, y: 0.66}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  isGround: 0
+  touchLeftWall: 0
+  touchRightWall: 0
