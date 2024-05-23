@@ -14,12 +14,14 @@ public class Character : MonoBehaviour
     private float invulnerableCounter;
     public bool invulnerable;
 
-    public UnityEvent<Transform> OnTakeDamage;  // 受伤事件
-    public UnityEvent OnDie;                    // 死亡事件
+    public UnityEvent<Character> OnHealthChange;    // 血量改变事件
+    public UnityEvent<Transform> OnTakeDamage;      // 受伤事件
+    public UnityEvent OnDie;                        // 死亡事件
 
     private void Start()
     {
         currentHealth = maxHealth;
+        OnHealthChange?.Invoke(this);
     }
 
     private void Update()
@@ -54,9 +56,10 @@ public class Character : MonoBehaviour
         {
             currentHealth = 0;
 
-            OnDie?.Invoke();    // 处理死亡事件
+            OnDie?.Invoke();        // 处理死亡事件
         }
 
+        OnHealthChange?.Invoke(this);   // 处理血量改变事件
     }
 
     /// <summary>
