@@ -37,6 +37,17 @@ public class Character : MonoBehaviour
         }
     }
 
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        // 掉进水里
+        if (collision.CompareTag("Water"))
+        {
+            currentHealth = 0;
+            OnHealthChange?.Invoke(this);   // 更新血量
+            OnDie?.Invoke();                // 死亡
+        }
+    }
+
     /// <summary>
     /// 计算受到的伤害
     /// </summary>
